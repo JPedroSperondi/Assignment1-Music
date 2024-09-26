@@ -1,0 +1,92 @@
+
+/*Changing the background color to black*/
+body{
+    background-color: black;
+}
+
+/*Making the header a flex*/
+body header{
+    /*Making the header a flex so all content get aligned horizontally*/
+    display:flex;
+    /*To aligned all content in the center of both axis*/
+    justify-content:center;
+    text-align:center;
+}
+
+/*Changing the font size, color and family of all general text*/
+h1,h2,h3,h4,h5,h6,p{
+    font-size: 16px;
+    color:white;
+    font-family: 'Playfair Display';
+}
+
+/*Changing the color, size and family of the span inside the lyrics */
+span{
+    color:red;
+    font-family: 'Bebas Neue';
+    font-size:25px;
+}
+
+/*Adjusting the width so all content share the same space*/
+header>div{
+    width:33%
+}
+
+/*Adjusting the size of the lyrics*/
+header>div>p{
+    font-size:50px
+}
+
+/*Changing the height of the image*/
+header>div>img{
+    height:80%;
+    /*Changing the color of the border*/
+    border-color:white;
+    /*Changing the radius to make the image a circle*/
+    border-radius:120px
+}
+
+/*Make both divs a flex so all content align perfectly on it's axis*/
+.div1,.div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Changing the size and the border color of the video clip*/
+.div1>iframe{
+    size: 50px;
+    border-color: white;
+}
+
+/*Changing the size of the div so all content align*/
+.div2>div{
+    width: 33%;
+    text-align: center;
+}
+
+/*Changing the size and family of the group name NSYNC at both left(1) and right(3)*/
+.div2 > div:nth-of-type(1)>p,
+.div2 > div:nth-of-type(3)>p {
+
+    font-size:100px;
+    font-family: 'Playwrite DK Loopet';
+}
+
+/*Aligning the content of "note" and "fun fact"*/
+.div3{
+    text-align: center;
+    /*Giving some padding to make it easier to read*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Changing the size of the font*/
+.div3>p{
+    font-size:15px;
+}
+
+/*Changing the color of the link to the original clip*/
+.div3>a{
+    color:red;
+}
